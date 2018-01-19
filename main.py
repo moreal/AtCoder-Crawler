@@ -1,12 +1,16 @@
 #-*- coding:utf8 -*-
 
 from atparser.parser import *
+from datetime import *
 
 def main():
     p = Parser(["agc","arc","abc"])
     p.parse()
 
-    print PROBS
+    f = open("../AtCoderProbs {} .csv".format(datetime.now()),"w")
+    for data in PROBS:
+        f.write(data.toExcel())
+        
 
 if __name__ == "__main__":
     main()

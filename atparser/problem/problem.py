@@ -12,3 +12,9 @@ class Problem:
 
     def __str__(self):
         return '[ {} ] {} in "{}" / {} points'.format(self.code,self.problem_name,self.contest_name,self.score)
+        
+    def __list__(self):
+        return [code, problem_name, score, contest_name, link, time_limit, memory_limit]
+        
+    def toExcel(self):
+        return ",".list(self) + "\n"
