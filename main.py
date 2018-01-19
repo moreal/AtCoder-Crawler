@@ -3,7 +3,7 @@
 from atparser.parser import *
 
 def main():
-    p = Parser("agc")
+    p = Parser(["agc","arc","abc"])
     p.parse()
 
     print PROBS

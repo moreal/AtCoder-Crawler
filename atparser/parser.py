@@ -9,27 +9,30 @@ PROBS = []
 url = "https://beta.atcoder.jp/contests/{}/tasks/{}"
 
 class Parser():
-    def __init__(self, contest):
-#        print "CREATE contest :",contest
-        self.contest = contest
-        self.run = True
-        self.num = 1
+    def __init__(self, contests):
+        self.contests = contests
 
     def parse(self):
-        while self.run:
-            try:
-                contest_name = ("%s%03d" % (self.contest, self.num))
-                for c in "abcdefghijklnmopqrstuvwxyz":
-                    problem_code = contest_name + "_" + c
-                    try:
-                        _parse(contest_name, problem_code)
-                    except NotFoundException as e:
-                        continue
-#                print self.num
-                self.num += 1
+        for contest in self.contests:
+            
+            self.num = 1
+            
+            while True:
+                try:
+                    contest_name = ("%s%03d" % (contest, self.num))
+                    print "Find Contest", contest_name
+                    _get("https://beta.atcoder.jp/contests/{}".format(contest_name))
+                    for c in string.digits + string.ascii_lowercase:
+                        problem_code = contest_name + "_" + c
+                        try:
+                            _parse(contest_name, problem_code)
+                        except NotFoundException as e:
+                            continue
+                    self.num += 1
 
-            except NotFoundException as e:
-                self.run = False
+                except NotFoundException as e:
+                    print "Error"
+                    break
 
     def isRun(self):
         return self.run
