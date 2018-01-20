@@ -7,7 +7,7 @@ def main():
     p = Parser(["agc","arc","abc"])
     p.parse()
 
-    f = open("../AtCoderProbs {} .csv".format(datetime.now()),"w")
+    f = open("AtCoderProbs.csv","w")
     for data in PROBS:
         f.write(data.toExcel())
         

@@ -10,13 +10,14 @@ url = "https://beta.atcoder.jp/contests/{}/tasks/{}"
 
 class Parser():
     def __init__(self, contests):
+        PROBS.append(Problem("code","problem_name","score","contest_name","link","time_limit","memory_limit"))
         self.contests = contests
 
     def parse(self):
         for contest in self.contests:
-            
+
             self.num = 1
-            
+
             while True:
                 try:
                     contest_name = ("%s%03d" % (contest, self.num))
@@ -42,7 +43,7 @@ def _parse(contest, code):
     try:
         now_url = url.format(contest, code)
         page = _get(now_url)
-        prob = Problem(code, title._title(page), score._score(page), contest, url, time._time(page),memory._memory(page))
+        prob = Problem(code, title._title(page), score._score(page), contest, now_url, time._time(page),memory._memory(page))
         PROBS.append(prob) # code, problem_name, score, contest_name, link, time_limit, memory_limit
         print "-"*50
         print "[*] check ",contest, code
