@@ -1,8 +1,10 @@
 # AtCoder Crawling
 
-## ¼Ò°³
-Æ®À§ÅÍ¿¡¼­ HYEA ¶ó´Â ºĞÀÌ AtCoder ¶ó´Â °÷¿¡ ´ëÇØ ¹®Á¦¸¦ ¿¢¼¿·Î Á¤¸®ÇØ ³õÀº °É º¸°í  
-³ªµµ ¸¸µå·Á°í ÇßÀ¸³ª µµÀúÈ÷ ¸øÇÒ °Í °°¾Æ¼­ ¸¸µé¾ú´Ù.  
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/69242cae6dba4762b2737d18248395b9)](https://app.codacy.com/app/dogeonlove0326/AtCoder-Crawler?utm_source=github.com&utm_medium=referral&utm_content=moreal/AtCoder-Crawler&utm_campaign=Badge_Grade_Dashboard)
 
-## ¼Ò°¨
-ÁÁ´Ù!
+## ì†Œê°œ
+íŠ¸ìœ„í„°ì—ì„œ HYEA ë¼ëŠ” ë¶„ì´ AtCoder ë¼ëŠ” ê³³ì— ëŒ€í•´ ë¬¸ì œë¥¼ ì—‘ì…€ë¡œ ì •ë¦¬í•´ ë†“ì€ ê±¸ ë³´ê³   
+ë‚˜ë„ ë§Œë“œë ¤ê³  í–ˆìœ¼ë‚˜ ë„ì €íˆ ëª»í•  ê²ƒ ê°™ì•„ì„œ ë§Œë“¤ì—ˆë‹¤.  
+
+## ì†Œê°
+ì¢‹ë‹¤!
